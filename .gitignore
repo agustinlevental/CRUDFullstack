@@ -1,0 +1,8 @@
+# Node.js
+CRUD/node_modules
+CRUD/build
+
+# Visual Studio
+crudbe/bin/
+crudbe/obj/
+.vs/
