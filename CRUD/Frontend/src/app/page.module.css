@@ -1,0 +1,15 @@
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+.actionsButtonsContainer {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
