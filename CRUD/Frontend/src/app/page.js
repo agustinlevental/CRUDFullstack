@@ -20,11 +20,11 @@ export default function Home() {
   const [showCreateEmployee, setShowCreateEmployee] = useState(false);
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
-  const [isActive, setIsActive] = useState("0");
+  const [isActive, setIsActive] = useState(0);
   const [editId, setEditId] = useState("");
   const [editName, setEditName] = useState("");
   const [editAge, setEditAge] = useState("");
-  const [isEditActive, setIsEditActive] = useState("0");
+  const [isEditActive, setIsEditActive] = useState(0);
 
   useEffect(() => {
     getData();
@@ -132,15 +132,15 @@ export default function Home() {
   const handleCloseCreateEmployee = () => setShowCreateEmployee(false);
   
   const handleIsActiveCheckbox = () => {
-    setIsActive(isActive === "0" ? "1" : "0");
+    setIsActive(isActive === 0 ? 1 : 0);
   };
   const handleIsEditActiveCheckbox = () => {
-    setIsEditActive(isEditActive === "0" ? "1" : "0");
+    setIsEditActive(isEditActive === 0 ? 1 : 0);
   };
   const clearFields = () => {
     setName("");
     setAge("");
-    setIsActive("0");
+    setIsActive(0);
   };
 
   return (
@@ -174,7 +174,7 @@ export default function Home() {
                   <td className="text-center">{item.name}</td>
                   <td className="text-center">{item.age}</td>
                   <td className="text-center">
-                    {item.isActive === "1" ? (
+                    {item.isActive === 1 ? (
                       <i className="bi bi-check-circle-fill text-success"></i>
                     ) : (
                       <i className="bi bi-x-circle-fill text-danger"></i>
@@ -233,7 +233,7 @@ export default function Home() {
             <Col style={{ display: "flex", alignItems: "center" }}>
               <input
                 type="checkbox"
-                checked={isActive === "1"}
+                checked={isActive === 1}
                 value={isActive}
                 onChange={handleIsActiveCheckbox}
               />
@@ -278,7 +278,7 @@ export default function Home() {
             <Col style={{ display: "flex", alignItems: "center" }}>
               <input
                 type="checkbox"
-                checked={isEditActive === "1"}
+                checked={isEditActive === 1}
                 value={isEditActive}
                 onChange={handleIsEditActiveCheckbox}
               />
