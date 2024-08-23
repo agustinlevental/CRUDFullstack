@@ -5250,11 +5250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\FullstackCRUD\\crudbe\\sample-crud-be\\sample-crud-be.csproj",
+      "projectUniqueName": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\instalando\\CRUDFullstack\\crudbe\\sample-crud-be\\sample-crud-be.csproj",
       "projectName": "sample-crud-be",
-      "projectPath": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\FullstackCRUD\\crudbe\\sample-crud-be\\sample-crud-be.csproj",
+      "projectPath": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\instalando\\CRUDFullstack\\crudbe\\sample-crud-be\\sample-crud-be.csproj",
       "packagesPath": "C:\\Users\\Cone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\FullstackCRUD\\crudbe\\sample-crud-be\\obj\\",
+      "outputPath": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\instalando\\CRUDFullstack\\crudbe\\sample-crud-be\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cone\\AppData\\Roaming\\NuGet\\NuGet.Config",

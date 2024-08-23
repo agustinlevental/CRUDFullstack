@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w4V5xUincDI=",
+  "dgSpecHash": "7JcgMW4nJAM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\FullstackCRUD\\crudbe\\sample-crud-be\\sample-crud-be.csproj",
+  "projectFilePath": "C:\\Users\\Cone\\Desktop\\backup\\Practica programacion\\instalando\\CRUDFullstack\\crudbe\\sample-crud-be\\sample-crud-be.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cone\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Cone\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

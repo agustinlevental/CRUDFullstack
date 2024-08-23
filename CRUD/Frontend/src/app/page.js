@@ -46,8 +46,8 @@ export default function Home() {
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
@@ -75,6 +75,7 @@ export default function Home() {
   };
 
   const handleUpdate = () => {
+    if (!validateInput(editName,editAge)) return;
     const url = `https://localhost:44342/api/Employee/${editId}`;
     const data = {
       id: editId,
@@ -94,6 +95,7 @@ export default function Home() {
     });
   };
   const handleSaveAndPost = () => {
+    if (!validateInput(name,age)) return;
     const url = "https://localhost:44342/api/Employee";
     const data = {
       name: name,
@@ -142,7 +144,22 @@ export default function Home() {
     setAge("");
     setIsActive(0);
   };
+  const validateInput = (name,age) => {
+    const nameRegex = /^[A-Za-z\s]+$/;  
+    const ageRegex = /^[0-9]+$/;        
 
+    if (!name || !nameRegex.test(name)) {
+      toast.error("Please enter a valid name.");
+      return false;
+    }
+
+    if (!age || !ageRegex.test(age)) {
+      toast.error("Please enter a valid age.");
+      return false;
+    }
+
+    return true;
+  };
   return (
     <Fragment>
       <ToastContainer />
