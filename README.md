@@ -26,8 +26,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas:
 ### 1. Configuración del Frontend
 
 1. Navega a la carpeta `Frontend`:
- cd CRUD/Frontend
-
+cd CRUDFullstack/CRUD/Frontend
 2. Instala las dependencias necesarias:
 npm install
 
@@ -39,13 +38,12 @@ npm run dev
 ### 2. Configuración del Backend
 (resultará más fácil desde Visual Studio)
 
-1. Navega a la carpeta sample-crud-be donde se encuentra la solución:
-cd CRUD/sample-crud-be
+1. Abre la Solución sample-crud-be.sln disponible en CRUDFullstack\crudbe\sample-crud-be
 
-2. Abre la solución en Visual Studio (sample-crud-be.sln).
+2. Asegúrate de que IIS Express esté seleccionado como el servidor para ejecutar la API Web. (por defecto suele estar en http con un simbolo de play verde)
 
-3. Asegúrate de que IIS Express esté seleccionado como el servidor para ejecutar la API Web. (por defecto suele estar en http con un simbolo de play verde)
-
-4. Haz clic en el botón de ejecución (play) o presiona F5 para iniciar la API Web.
+4. Haz clic en el botón de ejecución (play verde) o presiona F5 para iniciar la API Web.
 
 5. La API Web abrirá el Swagger para testear los endpoints en https://localhost:44342/swagger/index.html
+
+Ve al navegador http://localhost:3000 y presiona F5 para actualizar
