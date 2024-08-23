@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fullstack CRUD Application
 
-## Getting Started
+Este proyecto es una aplicación Fullstack que utiliza **React.js** para el frontend y **.NET 8** con **Entity Framework** para crear una API Web siguiendo el enfoque *code-first*. La aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en una base de datos.
 
-First, run the development server:
+## Estructura del Proyecto
 
-```bash
+El proyecto está organizado en dos carpetas principales:
+
+- **Frontend:** Contiene la aplicación React.js.
+- **sample-crud-be:** Contiene la solución .NET (`sample-crud-be.sln`) que implementa la API Web. - 
+
+## Backend (API Web con .NET 8 y Entity Framework):
+
+La API Web se creó utilizando .NET 8 y siguiendo el enfoque *code-first* de Entity Framework. En este enfoque, se definen primero las clases de los modelos de datos en el código C#, y luego Entity Framework se encarga de generar las tablas correspondientes en la base de datos. El backend maneja la lógica de negocio, las operaciones CRUD sobre la base de datos y responde a las solicitudes del frontend.
+
+## Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalados los siguientes programas:
+
+- [Node.js](https://nodejs.org/)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (o cualquier otro IDE compatible con .NET)
+
+## Instrucciones para Ejecutar el Proyecto
+
+### 1. Configuración del Frontend
+
+1. Navega a la carpeta `Frontend`:
+ cd CRUD/Frontend
+
+2. Instala las dependencias necesarias:
+npm install
+
+3. Ejecuta el servidor de desarrollo:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. El frontend estará disponible en http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 2. Configuración del Backend
+(resultará más fácil desde Visual Studio)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Navega a la carpeta sample-crud-be donde se encuentra la solución:
+cd CRUD/sample-crud-be
 
-## Learn More
+2. Abre la solución en Visual Studio (sample-crud-be.sln).
 
-To learn more about Next.js, take a look at the following resources:
+3. Asegúrate de que IIS Express esté seleccionado como el servidor para ejecutar la API Web. (por defecto suele estar en http con un simbolo de play verde)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Haz clic en el botón de ejecución (play) o presiona F5 para iniciar la API Web.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. La API Web abrirá el Swagger para testear los endpoints en https://localhost:44342/swagger/index.html
